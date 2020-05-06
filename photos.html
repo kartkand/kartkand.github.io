@@ -10,10 +10,11 @@
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
 
     <!-- Main CSS File -->
-    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./static/css/main.css" />
 
     <!--Font Awesome-->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <link rel="icon" type="image/png" href="./static/img/icon.png">
@@ -24,28 +25,37 @@
 
 <body data-target-row-height="200" style="margin: 0;">
 
+<div orientation="right" class="right bar"><ul class="bar-list">
+    <li class="bar-element"><a href="./" class="btn-nav"><i class="fas fa-home"></i></a></li>
+    <li class="bar-element"><a href="./about" class="btn-nav"><i class="fas fa-user"></i></a></li>
+    <li class="bar-element"><a href="./work" class="btn-nav"><i class="fas fa-briefcase"></i></a></li>
+    <li class="bar-element"><a href="./resume.pdf" class="btn-nav"><i class="fa fa-file-alt"></i></a></li>
+</ul></div>
+
+
+
 <nav class="navbar" role="navigation" aria-label="main navigation">
-<div class="navbar-brand">
-    <a class="navbar-item" href="/">
-        <h1 class="title is-1">Kartikeya Kandula</h1>
-<!--         <img src="./static/img/logo.png" alt=""></a> -->
-    </a>
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-    </a>
-</div>
-
-<div id="navbarBasicExample" class="navbar-menu">
-
-    <div class="navbar-end">
-        <a class="navbar-item right" href="/">Home</a>
-        <a class="navbar-item right" href="/about">About</a>
-        <a class="navbar-item right" href="/photos">Photos</a>
-        <a class="navbar-item right" href="/resume.pdf">Resume</a>
+    <div class="navbar-brand">
+        <a class="navbar-item" href="./">
+            <!-- <h1 class="title is-1">Kartikeya Kandula</h1> -->
+            <img src="./static/img/icon.png" alt="">
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
     </div>
-</div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+
+        <div class="navbar-end">
+            <a class="navbar-item right" href="./">Home</a>
+            <a class="navbar-item right" href="./about">About</a>
+            <a class="navbar-item right" href="./work">Work</a>
+            <a class="navbar-item right" href="./resume.pdf">Resume</a>
+        </div>
+    </div>
 </nav>
 
 <section class="hero is-medium" id = "intro-section">
@@ -212,16 +222,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 </script>
-<footer class="footer" style="padding-bottom: 2rem;">
-    <div class="content has-text-centered">
-        <a href="https://codepen.io/kartikeya-kandula/" target="_blank" class="btn-social"><i class="fa fa-codepen"></i></a>
-        <a href="https://www.linkedin.com/in/kartikeyakandula/" target="_blank" class="btn-social"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.behance.net/kartikeyakandula" target="_blank" class="btn-social"><i class="fa fa-behance"></i></a>
-        <a href="https://github.com/kartkand" target="_blank" class="btn-social"><i class="fa fa-github-square"></i></a>
-        <a href="mailto:kandula.kartikeya@gmail.com" target="_blank" class="btn-social"><i class="fa fa-envelope"></i></a>
+<div class="left bar"><ul class="bar-list">
+    <li class="bar-element"><a href="https://github.com/kartkand" target="_blank" class="btn-nav"><i class="fab fa-github"></i></a></li>
+    <li class="bar-element"><a href="https://www.linkedin.com/in/kartikeyakandula/" target="_blank" class="btn-nav"><i class="fab fa-linkedin"></i></a></li>
+    <li class="bar-element"><a href="https://www.instagram.com/kartikeyakandula/" target="_blank" class="btn-nav"><i class="fab fa-instagram"></i></a></li>
+    <li class="bar-element"><a href="https://twitter.com/kartikeyak16" target="_blank" class="btn-nav"><i class="fab fa-twitter"></i></a></li>
+    <li class="bar-element"><a href="mailto:kandula.kartikeya@gmail.com" target="_blank" class="btn-nav"><i class="fa fa-envelope"></i></a></li>
+</ul></div>
+
+<footer class="footer" style="display: none;">
+    <div class="footer-content has-text-centered">
+        <a href="https://github.com/kartkand" target="_blank" class="btn-nav"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/kartikeyakandula/" target="_blank" class="btn-nav"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/kartikeyakandula/" target="_blank" class="btn-nav"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/kartikeyak16" target="_blank" class="btn-nav"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:kandula.kartikeya@gmail.com" target="_blank" class="btn-nav"><i class="fa fa-envelope"></i></a>
     </div>
-    <div class="content has-text-centered">
-        <div class="footer-brand">&copy 2019 Kartikeya Kandula</div>
+    <div class="footer-content has-text-centered">
+        <div class="footer-brand">&copy 2020 Kartikeya Kandula</div>
     </div>
 </footer>
 
