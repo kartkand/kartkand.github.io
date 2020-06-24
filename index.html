@@ -25,112 +25,33 @@
 
 <body>
 
-<div class="page-container">
-
-<div orientation="right" class="right bar"><ul class="bar-list">
-    <li class="bar-element"><a href="./" class="btn-nav"><i class="fas fa-home"></i></a></li>
-    <li class="bar-element"><a href="./about" class="btn-nav"><i class="fas fa-user"></i></a></li>
-    <li class="bar-element"><a href="./work" class="btn-nav"><i class="fas fa-briefcase"></i></a></li>
-    <li class="bar-element"><a href="./resume.pdf" class="btn-nav"><i class="fa fa-file-alt"></i></a></li>
-</ul></div>
-
-
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="./">
-            <!-- <h1 class="title is-1">Kartikeya Kandula</h1> -->
-            <img src="./static/img/icon.png" alt="">
-        </a>
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-    </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-
-        <div class="navbar-end">
-            <a class="navbar-item right" href="./">Home</a>
-            <a class="navbar-item right" href="./about">About</a>
-            <a class="navbar-item right" href="./work">Work</a>
-            <a class="navbar-item right" href="./resume.pdf">Resume</a>
+    <section class="hero is-medium page-content">
+        <div class="hero-body" style="padding-top: 5rem;">
+            <div class="columns">
+                <div class="column is-two-thirds is-offset-2">
+                    <h1><strong class="is-purple">Kartikeya Kandula</strong></h1>
+                    <h1><strong>Ph.D. @ Princeton</strong></h1>
+                <br>
+                    <h3>Welcome to my crib. I'm Kart, a first year Ph.D. student in <a class="highlight-link" href="https://citp.princeton.edu/" target="_blank">CITP</a> at Princeton. My research interests include tech policy, with an emphasis on online speech and privacy.</h3>
+                <br>
+                    <h3>I received my B.S.E and M.S.E in computer science engineering from THE <a class="highlight-link" href="https://www.youtube.com/watch?v=1n4rqMnxaig" target="_blank">University of Michigan</a>. I've also interned at Microsoft and J.P. Morgan.</h3>
+                <br>
+                <h3>I love getting to meet new people so please hit me up!</h3>
+    
+                    <p style="margin-top: 2.5rem;"><a href="https://www.instagram.com/kartikeyakandula/" class="arrow-link" target="_blank">Check out my life</a></p>
+                </div>
+            </div>
         </div>
-    </div>
-</nav>
-
-<section class="hero is-medium page-content">
-	<div class="hero-body">
-	    <div class="columns">
-	    	<div class="column is-two-thirds is-offset-2">
-		        <h1><strong class="is-purple">Kartikeya Kandula</strong></h1>
-		        <h1><strong>Ph.D. @ Princeton</strong></h1>
-            <br>
-		        <h3>Hello 👋!</h3>
-            <br>
-		        <h3>I'm <strong>Kart</strong>, a first year computer science Ph.D. student in <a class="highlight-link" href="https://citp.princeton.edu/" target="_blank">CITP</a> at Princeton University. My research interests include tech policy, information privacy, and algorithmic bias.</h3>
-            <br>
-		        <h3>I received my B.S.E and M.S.E in computer science engineering from the <a class="highlight-link" href="https://www.youtube.com/watch?v=1n4rqMnxaig" target="_blank">University of Michigan</a>. Previously, I have worked as a Software Engineering Intern at Microsoft and as a Technology Analyst Intern at J.P. Morgan.</h3>
-
-		        <p style="margin-top: 2.5rem;"><a href="https://www.instagram.com/kartikeyakandula/" class="arrow-link" target="_blank">See my life</a></p>
-		    </div>
-	    </div>
-	</div>
-
-</section>
-
-<div class="left bar"><ul class="bar-list">
-    <li class="bar-element"><a href="https://github.com/kartkand" target="_blank" class="btn-nav"><i class="fab fa-github"></i></a></li>
-    <li class="bar-element"><a href="https://www.linkedin.com/in/kartikeyakandula/" target="_blank" class="btn-nav"><i class="fab fa-linkedin"></i></a></li>
-    <li class="bar-element"><a href="https://www.instagram.com/kartikeyakandula/" target="_blank" class="btn-nav"><i class="fab fa-instagram"></i></a></li>
-    <li class="bar-element"><a href="https://twitter.com/kartikeyak16" target="_blank" class="btn-nav"><i class="fab fa-twitter"></i></a></li>
-    <li class="bar-element"><a href="mailto:kandula.kartikeya@gmail.com" target="_blank" class="btn-nav"><i class="fa fa-envelope"></i></a></li>
-</ul></div>
-
-<footer class="footer" style="display: none;">
-    <div class="footer-content has-text-centered">
-        <a href="https://github.com/kartkand" target="_blank" class="btn-nav"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/kartikeyakandula/" target="_blank" class="btn-nav"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/kartikeyakandula/" target="_blank" class="btn-nav"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/kartikeyak16" target="_blank" class="btn-nav"><i class="fab fa-twitter"></i></a>
-        <a href="mailto:kandula.kartikeya@gmail.com" target="_blank" class="btn-nav"><i class="fa fa-envelope"></i></a>
-    </div>
-    <div class="footer-content has-text-centered">
-        <div class="footer-brand">&copy 2020 Kartikeya Kandula</div>
-    </div>
-</footer>
-
-</div>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-
-  // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-  // Check if there are any navbar burgers
-  if ($navbarBurgers.length > 0) {
-
-    // Add a click event on each of them
-    $navbarBurgers.forEach( el => {
-      el.addEventListener('click', () => {
-
-        // Get the target from the "data-target" attribute
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
-
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-
-      });
-    });
-  }
-
-});
-</script>
-
-</body>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-content has-text-centered">
+            <a href="https://www.linkedin.com/in/kartikeyakandula/" target="_blank" class="btn-nav"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/kartikeyakandula/" target="_blank" class="btn-nav"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/kartkand" target="_blank" class="btn-nav"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:kandula.kartikeya@gmail.com" target="_blank" class="btn-nav"><i class="fa fa-envelope"></i></a>
+        </div>
+    </footer>
+    
+    </body>
 </html>
